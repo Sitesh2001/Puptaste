@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Details with Image</title>
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/cart.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+</head>
+<body id="top">
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">
+                        <!-- Your logo image or text goes here -->
+                        PupTaste
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button class="search-btn" aria-label="Search">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+                <div class="user-profile">
+                    <button class="action-btn user" aria-label="User">
+                        <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+                <div class="cart">
+                    <button class="action-btn" aria-label="Cart">
+                        <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+                        <!-- Optional badge for cart count -->
+                        <span class="cart-badge">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="card">
+        <div class="card-header">
+            <h2>Card Details</h2>
+        </div>
+        <div class="card-body">
+            <img src="./assets/images/product-1.jpg" alt="Card Image">
+            <div class="card-info">
+                <p><strong>Card Number:</strong> 1234 5678 9012 3456</p>
+                <p><strong>Cardholder Name:</strong> John Doe</p>
+                <p><strong>Expiration Date:</strong> 12/24</p>
+                <p><strong>CVV:</strong> 123</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
